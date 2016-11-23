@@ -7,11 +7,11 @@ n=7;k=4;
 ink=eye(n-k);
 h=cat(2,ink,p');
 ht=h'
-%disp('Transpose of parity check matrics :');disp(ht);
+disp('Transpose of parity check matrics :');disp(ht);
 
 s0=r*ht;
 s=mod(s0,2);
-%disp('Syndrome :');disp(s);
+disp('Syndrome :');disp(s);
 
 %
 g1=cyclpoly(n,k,'max');
@@ -38,5 +38,5 @@ r(1,row) = ~r(1,row);
 %disp(r);
 disp('Correct codeword is:');
 end
-%disp('c=');
-%disp(r);
+disp('c=');
+disp(r);
