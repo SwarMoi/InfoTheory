@@ -7,11 +7,8 @@ disp(msg)
 [genpoly,t] = bchgenpoly(n,k);
 disp('Generator Polynomial : ')
 disp(genpoly)
-disp('No of errors')
-disp(t)
 % Define t2, the number of errors to add in this example.
 t2 = t;
-
 % Encode the message.
 code = bchenc(msg,n,k);
 disp('Encoded msg : ')
